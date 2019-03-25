@@ -1,0 +1,197 @@
+html,body{
+    min-width:290px;
+      color: #4d4e53;
+      background-color: #ffffff;
+      font-family: 'Open Sans',Arial,sans-serif;
+      line-height: 1.5;
+  }
+
+  header{
+    font-weight: bold;
+	  margin: 0;
+  }
+  #navbar{
+    position:fixed;
+    min-width:290px;
+    top:0px;
+    left:0px;
+    width:300px;
+    height:100%;
+    border-right:solid;
+    border-color:rgba(0,22,22,0.4);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    color: white;
+  }
+  header{
+    color:black;
+    font-size: 30px;
+    margin:10px;
+    text-align:center;
+    font-size:1.8em;
+    font-weight:thin;
+  }
+  #main-doc header{
+    text-align:left;
+    margin:0px;
+  }
+  #navbar ul{
+    height:88%;
+    overflow-y:auto;
+    overflow-x:hidden;
+  }
+  #navbar li{
+    color: white;
+    border:1px solid;
+    border-bottom-width:0px;
+    padding:8px;
+    padding-left:45px;
+    list-style: none;
+    position:relative;
+   left:-50px;
+    width:100%;
+    font-size: 1.5em;
+    
+  }
+  #navbar a{
+    color: #4d4e53;
+      text-decoration:none;
+      cursor:pointer;
+  } 
+  #main-doc{
+    position: absolute;
+    margin-left:310px;
+    padding:20px;
+    margin-bottom:110px;
+  }
+  section article{
+    color: #4d4e53;
+    margin:15px;
+    font-size:0.96em;
+  }
+  section li {
+    margin:15px 0px 0px 20px;
+  }
+ button {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+
+
+.transactionHistory{
+  display: flex;
+  border-top-width: 1px;
+  /* border-right-width: 1px; */
+
+  border-bottom-width: 1px;
+  /* border-left-width: 1px; */
+  /* width: 100%; */
+  /* background: linear-gradient(to right, #FF4B2B, #FF416C); */
+  text-align:center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 5px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+/* Create account form Styles */
+
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+
+  @media only screen and (max-width: 815px) {
+      /* For mobile phones: */
+    #navbar ul{
+    border:1px solid;
+      height:207px;
+    }
+      #navbar{
+        background-color:white;
+        position:absolute;
+        top:0;
+        padding:0;
+        margin: 0;
+        width:100%;
+        max-height:275px;
+        border:none;
+        z-index:1;
+        border-bottom:2px solid;
+      }
+    #main-doc{
+      position: relative;
+      margin-left:0px;
+      margin-top:270px;
+    }
+    #main-doc section {
+  /*     padding-top: 240px; */
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #main-doc{
+      margin-left:-10px;
+    }
+    
+  }
