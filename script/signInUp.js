@@ -1,3 +1,5 @@
+// Code to change the wrapper when user clicks sign up or sign in
+
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
