@@ -6,34 +6,8 @@
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/signInUp.css">
-        <!-- <script src="loginValidation.js"></script> -->
-        <script>
-        var attempt = 3; // Set the number of log in attempts.
-
-//function to execute when submit button is clicked.
-
-function validate(){
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    if(username == "ridwan" && password == "ridwan123"){
-        alert('Login successfully');
-        window.open = 'http://www.google.com.ng'; //redirect to the user dashboard.
-
-    } else{
-        attempt--; //Decrement by one
-        alert('You have '+ attempt + " left");
-        //Disable all fields after the third failed attempt.
-        if(attempt == 0){
-            document.getElementById('username').disabled = true;
-            document.getElementById('password').disabled = true;
-            document.getElementById('submit').disabled = true;
-
-        }
-    }
-}
-
-
-        </script>
+        <script src="loginValidation.js"></script>
+    
     </head>
     <body>
             <div class="container" id="container">
