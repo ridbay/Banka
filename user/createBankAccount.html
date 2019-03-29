@@ -51,16 +51,16 @@
                               <label for="gender">*Gender</label>
                             </div>
                             <div class="rightTab">
-                              <ul style="list-style: none;">
-                                <li class="radio"><label>Male<input name="radio-buttons" value="1"  type="radio" class="gender" ></label></li>
-                                <li class="radio"><label>Female<input name="radio-buttons" value="2"  type="radio" class="gender" ></label></li>
-                                <li class="radio"><label>Prefer not to say<input name="radio-buttons" value="3"  type="radio" class="gender" ></label></li>
-                              </ul>
+                              <select id="gender" name="gender" class="dropdown">
+                                <option disabled selected value>Select an option</option>
+                                <option value="savings">Male</option>
+                                <option value="current">Female</option>
+                              </select>
                             </div>
                           </div>
                         <div class="rowTab">
                             <div class="labels">
-                              <label for="address">Home <Address></Address></label>
+                              <label for="address"> Home Address</label>
                             </div>
                             <div class="rightTab">
                               <textarea id="address" class="input-field" style="height:50px;resize:vertical;" name="address" placeholder="Enter your home address here..."></textarea>
@@ -101,14 +101,20 @@
                               <input autofocus type="text" name="balance" id="balance" class="input-field" placeholder="Enter Opening balance" required>
                             </div>
                           </div>
-                        
+                          <div class="rowTab">
+                            <div class="labels">
+                              <label id="passport-label" for="passport">Upload Passport Photo: </label>
+                            </div>
+                          <div class="rightTab">
+                            <input type="file" name="passport" id="passport" class="input-field" required>
+                          </div>
+                        </div>
                         <div class="wapper">
                             <button class="button" id="submit" type="submit">Submit</button>
                         </div>
                         
                       </form>
                 </section>
-                
-              </main>
+               </main>
 </body>
 </html>
