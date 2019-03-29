@@ -6,6 +6,7 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/dashboard.css">
+    <script src="../script/script.js"></script>
 </head>
 <body>
 
@@ -106,7 +107,8 @@
                               <label id="passport-label" for="passport">Upload Passport Photo: </label>
                             </div>
                           <div class="rightTab">
-                            <input type="file" name="passport" id="passport" class="input-field" required>
+                            <input type="file" onchange="readURL(this);" name="passport" id="passport" class="input-field" required>
+                            <img id="blah" src="../img/passport.png" alt="your passport" />
                           </div>
                         </div>
                         <div class="wapper">
@@ -116,5 +118,6 @@
                       </form>
                 </section>
                </main>
+               
 </body>
 </html>
