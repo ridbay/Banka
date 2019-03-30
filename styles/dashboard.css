@@ -22,7 +22,6 @@ html,body{
     background: linear-gradient(to right, #FF4B2B, #FF416C);
     color: white;
   }
-
   
   header{
     color:black;
@@ -98,7 +97,7 @@ html,body{
 .button {
   position: absolute;
   top: 100%;
-  margin-left:310px; /*centralizes the button in account opening page*/
+  margin-left:310px; /*centralizes the button in account opening page. */
 }
 
 
