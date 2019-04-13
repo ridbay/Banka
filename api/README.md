@@ -6,3 +6,4 @@ A set of API endpoints defined in the API Endpoints Specification section and us
 
 Coveralls badge
 [![Coverage Status](https://coveralls.io/repos/github/ridbay/Banka/badge.svg?branch=develop)](https://coveralls.io/github/ridbay/Banka?branch=develop)
+
