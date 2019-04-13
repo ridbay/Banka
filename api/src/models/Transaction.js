@@ -19,15 +19,12 @@ class Transaction {
      */
   create(data) {
     const newTransaction = {
-      id: uuid.v4(), // set the default transaction id
-      createdOn: moment.now() || '',
-      type: data.type || '',
+      transactionId: uuid.v4(), // set the default transaction id
       accountNumber: data.accountNumber || '',
-      cashier: data.cashier || '',
       amount: data.amount || '',
-      oldBalance: data.oldBalance || '',
-      newBalance: data.newBalance || '',
-      modifiedDate: moment.now(),
+      cashier: data.cashier || '',
+      transactionType: data.transactionType || '',
+      accountBalance: data.accountBalance,
 
     };
     this.transactions.push(newTransaction);
@@ -41,7 +38,7 @@ class Transaction {
      * @returns {object} transaction object
      */
   findOne(id) {
-    return this.transactions.find(transaction => transaction.id === id);
+    return this.transactions.find(transaction => transaction.transactionId === id);
   }
 
   // find all transactions
@@ -60,13 +57,8 @@ class Transaction {
   update(id, data) {
     const transaction = this.findOne(id);
     const index = this.transactions.indexOf(transaction);
-    this.transactions[index].modifiedDate = moment.now();
-    this.transactions[index].type = data['type'] || transaction.type;
-    this.transactions[index].accountNumber = data['accountNumber'] || transaction.accountNumber;
     this.transactions[index].cashier = data['cashier'] || transaction.cashier;
     this.transactions[index].amount = data['amount'] || transaction.amount;
-    this.transactions[index].oldBalance = data['oldBalance'] || transaction.oldBalance;
-    this.transactions[index].newBalance = data['newBalance'] || transaction.newBalance;
     return this.transactions[index];
   }
 

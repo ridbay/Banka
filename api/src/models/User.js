@@ -89,7 +89,6 @@ class User {
         this.users[index].lastName = data['lastName'] || user.lastName;
         this.users[index].password = data['password'] || user.password;
         this.users[index].type = data['type'] || user.type;
-        this.users[index].isAdmin = data['isAdmin'] || user.isAdmin;
         return this.users[index];
     }
     /**
