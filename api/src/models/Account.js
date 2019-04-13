@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-import moment from 'moment';
 import uuid from 'uuid';
 
 class Account {
@@ -19,14 +18,13 @@ class Account {
   create(data) {
     const newAccount = {
       id: uuid.v4(), // set the default account id
-      accountNumber: data.accountNumber || '',
-      createdOn: moment.now() || '',
-      owner: data.owner || '',
-      type: data.type || '',
-      status: data.status || '',
-      balance: data.balance,
-
-    };
+      accountNumber: data.accountNumber || 3042901179,
+      firstName: data.firstName || 'Ridwan', // account owner first name
+      lastName: data.lastName || 'Balogun', // account owner last name
+      email: data.email || 'balogunridwan@gmail.com', // account owner email
+      type: data.type  || 'savings', // savings, current
+      openingBalance: data.openingBalance || ' 2000889.98',
+      };
     this.accounts.push(newAccount);
     return newAccount;
   }
@@ -57,12 +55,8 @@ class Account {
   update(id, data) {
     const account = this.findOne(id);
     const index = this.accounts.indexOf(account);
-    this.accounts[index].accountNumber = data.accountNumber || account.accountNumber;
-    this.accounts[index].createdOn = data.createdOn || account.createdOn;
-    this.accounts[index].owner = data.owner || account.owner;
-    this.accounts[index].type = data.type || account.type;
-    this.accounts[index].status = data.status || account.status;
-    this.accounts[index].balance = data.balance || account.balance;
+    this.accounts[index].accountNumber = data.accountNumber || account.accountNumber; // user unique id
+    this.accounts[index].status = data.status || account.status; // active or dormant
     return this.accounts[index];
   }
 
@@ -74,7 +68,7 @@ class Account {
     const account = this.findOne(id);
     const index = this.accounts.indexOf(account);
     this.accounts.splice(index, 1);
-    return {};
+    return {"message" : "Account successfully deleted!"};
   }
 }
 export default new Account();

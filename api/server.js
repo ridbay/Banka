@@ -42,13 +42,14 @@ app.delete('/api/v1/users/:id', User.delete);
 app.post('/api/v1/accounts', Account.create);
 app.get('/api/v1/accounts', Account.getAll);
 app.get('/api/v1/accounts/:id', Account.getOne);
-app.put('/api/v1/accounts/:id', Account.update);
+app.patch('/api/v1/accounts/:id', Account.update);
 app.delete('/api/v1/accounts/:id', Account.delete);
 
 //transactions end points
 
-app.post('/api/v1/transactions', Transaction.create);
-//app.get('/api/v1/transactions', Transaction.getAll);
+app.post('/api/v1/transactions/:id/debit', Transaction.create); //Debit a bank account.
+app.post('/api/v1/transactions/:id/credit', Transaction.create); //Credit a bank account.
+// app.get('/api/v1/transactions', Transaction.getAll);
 // app.get('/api/v1/transactions/:id', Transaction.getOne);
 app.put('/api/v1/transactions/:id', Transaction.update);
 app.delete('/api/v1/transactions/:id', Transaction.delete);

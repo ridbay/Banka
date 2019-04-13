@@ -11,7 +11,7 @@ const Transaction = {
      * @returns {object} transaction object
      */
   create(req, res) {
-    if (!req.body.type && !req.body.accountNumber && !req.body.cashier && !req.body.amount && !req.body.oldBalance && !req.body.newBalance) {
+    if (!req.body) {
       // eslint-disable-next-line space-in-parens
       return res.status(400).send( { message: 'All fields(type, account number, cashier, amount, old balance, new balance) are required' });
     }
@@ -40,7 +40,7 @@ const Transaction = {
   getOne(req, res) {
     const transaction = TransactionModel.findOne(req.params.id);
     if (!transaction) {
-      return res.status(404).send({ message: 'transaction does not exist' });
+      return res.status(404).send({ 'message' : 'transaction does not exist' });
     }
     return res.status(200).send(transaction);
   },
@@ -55,7 +55,7 @@ const Transaction = {
   update(req, res) {
     const transaction = TransactionModel.findOne(req.params.id);
     if (!transaction) {
-      return res.status(404).send({ message: 'transaction does not exist' });
+      return res.status(404).send({ 'message' : 'transaction does not exist' });
     }
     const updatedTransaction = TransactionModel.update(req.params.id, req.body);
     return res.status(200).send(updatedTransaction);
@@ -71,7 +71,7 @@ const Transaction = {
   delete(req, res) {
     const transaction = TransactionModel.findOne(req.params.id);
     if (!transaction) {
-      return res.status(404).send({ message: 'transaction does not exist' });
+      return res.status(404).send({ 'message' : 'transaction does not exist' });
     }
     const deleteTransaction = TransactionModel.delete(req.params.id);
     return res.status(204).send(deleteTransaction);
