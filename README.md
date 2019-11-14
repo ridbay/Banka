@@ -6,7 +6,7 @@
 
 ##Challenge 1 - UI Templates
 ###Creat UI templates with HTML , CSS , and Javascript
-Click [Banka UI](https://ridbay.github.io/UI/) to see the pages
+Click [Banka](https://ridbay.github.io/Banka/) to see the pages
  
 
 
