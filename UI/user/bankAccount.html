@@ -1,28 +1,95 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <title>
-        Banka | Customer Sign-in/Sign-up
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/dashboard.css">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/testDashboard.css">
 </head>
 <body>
+<header>
+  <ul class="topnav">
+    <li><a href="#profile">Profile</a></li>
+    <li><a class="active" href="#account">Bank Account</a></li>
+    <li><a href="./transactionHistory.html">Transaction History</a></li>
+    <li class="right"><a href="./signIn.html">Log Out</a></li>
+    
+  </ul>
+</header>
 
-        <nav id="navbar">
-                <header>User Dashboard</header>
-                <ul> 
-                  <a class="nav-link" href="dashboard.html"><li>Profile</li></a>
-                  <a class="nav-link" href="#"><li>Bank Account</li></a>
-                  <a class="nav-link" href="transactionHistory.html"><li>Transaction History</li></a>
-                </ul>
-              </nav>
-              <main id="main-doc">
-                <section class="main-section">
-                  <header>Account Details</header>
-                  <div>  
-                    <button id="createAccout"><a href="createBankAccount.html">Create An Account</a></button>
-                  </div></section>
-            
-              </main>
+
+<div class="banner">
+  <div class="balance">
+    <p>Account Balance</p>
+    <h3>₦ 1,000,000</h3>
+  </div>
+  <button class="account-button"><a href="./createBankAccount.html">Create a bank account</a></button>
+</div>
+<div class="content">
+  <table>
+    <tr>
+      <th class="table-title" colspan="6">My Accounts</th>
+    </tr>
+    <tr>
+      <!-- <th class="table-header"></th> -->
+      <th class="table-header">Type</th>
+      <th class="table-header">Account Number</th>
+      <th class="table-header">Status</th>
+      <th class="table-header">Created On</th>
+      <th class="table-header">Balance</th>
+      <th class="table-header">History</th>
+    </tr>
+    <tr>
+ 
+      <td>Current</td>
+      <td>767739786</td>
+      <td>Active</td>
+      <td>29th, April 2019</td>
+      <td>₦ 10,000,000</td>
+      <td><button class="view-account"><a href="./transactionHistory2.html">View</a></button></td>
+    </tr>
+    <tr>
+
+      <td>Savings</td>
+      <td>3042091179</td>
+      <td>Active</td>
+      <td>1st, April 2019</td>
+      <td>₦ 5,000,000</td>
+      <td><button class="view-account"><a href="./transactionHistory2.html">View</a></button></td>
+      
+    </tr>
+    <tr>
+
+      <td>Savings</td>
+      <td>3042091179</td>
+      <td>Active</td>
+      <td>1st, April 2019</td>
+      <td>₦ 5,000,000</td>
+      <td><button class="view-account"><a href="./transactionHistory2.html">View</a></button></td>
+      
+    </tr>
+    <tr>
+
+      <td>Savings</td>
+      <td>3042091179</td>
+      <td>Active</td>
+      <td>1st, April 2019</td>
+      <td>₦ 5,000,000</td>
+      <td><button class="view-account"><a href="./transactionHistory2.html">View</a></button></td>
+      
+    </tr>
+    <tr>
+
+      <td>Savings</td>
+      <td>3042091179</td>
+      <td>Active</td>
+      <td>1st, April 2019</td>
+      <td>₦ 5,000,000</td>
+      <td><button class="view-account"><a href="./transactionHistory2.html">View</a></button></td>
+      
+    </tr>
+  </table>
+
+
+</div>
 </body>
+<footer>Developed by Ridwan Balogun | Copyright &copy; 2019</footer>
 </html>

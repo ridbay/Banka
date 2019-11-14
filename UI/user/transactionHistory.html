@@ -1,58 +1,106 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <title>
-        Banka | Transaction History
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/dashboard.css">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/testDashboard.css">
 </head>
 <body>
+<header>
+  <ul class="topnav">
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="./bankAccount.html">Bank Account</a></li>
+    <li><a class="active" href="#history">Transaction History</a></li>
+    <li class="right"><a href="./signIn.html">Log Out</a></li>
+  </ul>
+</header>
 
-        <nav id="navbar">
-                <header>User Dashboard</header>
-                <ul> 
-                  <a class="nav-link" href="dashboard.html"><li>Profile</li></a>
-                  <a class="nav-link" href="#"><li>Bank Account</li></a>
-                  <a class="nav-link" href="transactionHistory.html"><li>Transaction History</li></a>
-                </ul>
-              </nav>
-              <main id="main-doc">
-                <section class="main-section">
-                  <header>Account Transaction History</header>
-                  <div id="transactionHistory" class="transactionHistory">
-                      <table class="accountHistory">
-                          <thead>
-                          <tr>
-                          <th>ID</th>
-                          <th>Beneficiary</th>
-                          <th>Account Number</th>
-                          <th>Transaction Type</th>
-                          <th>Remark</th>
-                          <th>Date</th>
-                          </tr>
-                          </thead>
-                          <tfoot>
-                          <tr>
-                          <td colspan="6">
-                          <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
-                          </td>
-                          </tr>
-                          </tfoot>
-                          <tbody>
-                          <tr>
-                          <td>001</td><td>Balogun Ridwan</td><td>3042901179</td><td>Debit</td><td>Buy data</td><td>2019-03-21</td></tr>
-                          <tr>
-                          <td>002</td><td>Balogun Ridwan</td><td>3042901179</td><td>Credit</td><td>Buy data</td><td>2019-03-21</td></tr>
-                          <tr>
-                          <td>003</td><td>Balogun Ridwan</td><td>3042901179</td><td>Debit</td><td>Buy data</td><td>2019-03-21</td></tr>
-                          <tr>
-                          <td>004</td><td>Balogun Ridwan</td><td>3042901179</td><td>Credit</td><td>Buy data</td><td>2019-03-21</td></tr>
-                          </tbody>
-                          </tr>
-                          </table>
-                    </div>
-                </section> 
-                               
-              </main>
+
+<div class="banner">
+  <div class="balance">
+    <p>Account Balance</p>
+    <h3>₦ 1,000,000</h3>
+  </div>
+  <button id="account-button">Create a bank account</button>
+</div>
+<div class="content">
+  <table>
+    <tr>
+      <th class="table-title" colspan="6">Transaction History</th>
+      <th class="account-filter" colspan="1">
+        <div class="ct-select-group ct-js-select-group">
+          <select class="ct-select ct-js-select">
+            <option>All</option>
+            <option>Credit</option>
+            <option>Savings</option>
+          </select>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <th class="table-header">Type</th>
+      <th class="table-header">Account Number</th>
+      <th class="table-header">Cashier</th>
+      <th class="table-header">Created On</th>
+      <th class="table-header">Amount</th>
+      <th class="table-header">Old Balance</th>
+      <th class="table-header">New Balance</th>
+    </tr>
+    <tr>
+      <td>Savings</td>
+      <td>0070729295</td>
+      <td>Balogun Ridwan</td>
+      <td>15th, Dec 2018</td>
+      <td>₦ 5,000,000</td>
+      <td>₦ 1,000,000</td>
+      <td>₦ 5,000,000</td>
+    </tr>
+    <tr>
+      <td>Savings</td>
+      <td>0070729295</td>
+      <td>Ridwan Balogun</td>
+      <td>23rd, Feb 2019</td>
+      <td>₦ 2,000,000</td>
+      <td>₦ 5,000,000</td>
+      <td>₦ 3,000,000</td>
+    </tr>
+    <tr>
+        <td>Savings</td>
+        <td>0070729295</td>
+        <td>Ridwan Balogun</td>
+        <td>13th, March, 2019</td>
+        <td>₦ 2,000,000</td>
+        <td>₦ 5,000,000</td>
+        <td>₦ 3,000,000</td>
+      </tr>
+      <tr>
+        <td>Savings</td>
+        <td>0070729295</td>
+        <td>Ridwan Balogun</td>
+        <td>23rd, Feb 2019</td>
+        <td>₦ 2,000,000</td>
+        <td>₦ 5,000,000</td>
+        <td>₦ 3,000,000</td>
+      </tr>
+      <tr>
+        <td>Savings</td>
+        <td>0070729295</td>
+        <td>Ridwan Balogun</td>
+        <td>23rd, Feb 2019</td>
+        <td>₦ 2,000,000</td>
+        <td>₦ 5,000,000</td>
+        <td>₦ 3,000,000</td>
+      </tr>
+      <tr>
+        <td>Savings</td>
+        <td>0070729295</td>
+        <td>Ridwan Balogun</td>
+        <td>23rd, Feb 2019</td>
+        <td>₦ 2,000,000</td>
+        <td>₦ 5,000,000</td>
+        <td>₦ 3,000,000</td>
+      </tr>
+  </table>
+</div>
 </body>
+<footer>Developed by Ridwan Balogun | Copyright &copy; 2019</footer>
 </html>

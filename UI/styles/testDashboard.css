@@ -1,0 +1,292 @@
+html,body{
+  min-width:290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans',Arial,sans-serif;
+    line-height: 1.5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: scroll; 
+    overflow-x:hidden;
+}
+
+body {  
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  /* position: absolute; */
+  overflow-y: scroll;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #FF4B2B;}
+
+ul.topnav li.right {float: right;}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+.account-button{
+  color:rgb(165, 46, 3);
+}
+
+.view-account{
+  border: 1px solid #FF4B2B;
+  background-color: #FF4B2B;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+ }
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: orangered;
+}
+
+.balance {
+  color: white;
+  justify-self: start;
+  align-self: center;
+  margin-left: 4rem;
+}
+
+.balance h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  /* font-weight: 800; */
+}
+
+.banner button {
+  padding: 0.9rem 2.5rem;
+  border: 0;
+  color: rgb(252, 44, 7);
+  background: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-right: 4rem;
+  outline: none;
+  justify-self: end;
+  align-self: center;
+  cursor: pointer;
+}
+
+/* Create account form Styles */
+
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+/*tables*/
+table {
+  /* border-collapse: collapse; */
+  margin: auto;
+  text-align: center;
+  box-shadow: 4px 4px 22px 1px rgba(216, 216, 216, 0.2);
+  border-radius: 5px;
+  border: 1px solid #dae5f7;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+td {
+  border: 1px solid #dae5f7;
+  text-align: center;
+  padding: 8px 20px;
+  width: auto;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+th {
+  padding: 13px;
+  color: var(--dark-grey);
+  border: 1px solid #dae5f7;
+  font-weight: 600;
+}
+
+.table-title {
+  text-align: left;
+  margin-left: 2rem;
+  color: var(--primary-blue);
+  font-weight: 800;
+  padding-left: 2rem;
+}
+
+.account-filter {
+  text-align: right;
+  margin-left: 2rem;
+  color: var(--primary-blue);
+}
+
+td img {
+  width: 30px;
+  height: 30px;
+}
+
+td button {
+  width: 80px;
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 500;
+  border: 0;
+  cursor: pointer;
+  padding: 0.7rem 1.4rem;
+}
+
+td a {
+  margin-right: 9px;
+}
+
+.viewBtn {
+  background-color:yellowgreen;
+}
+
+td .delete {
+  background-color: #ff3a3a;
+  margin-top: 10px;
+}
+
+.ct-select-group {
+  height: 37px;
+  position: relative;
+}
+
+.ct-select-group .ct-select {
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4f4f4f;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid #dae5f7;
+  border-radius: 3px;
+  outline: none;
+}
+.ct-select-group .ct-select option {
+  font-size: 18px;
+  background: #fff;
+}
+.ct-select-group:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 44px;
+  width: calc(100% - 64px);
+  background: transparent;
+  z-index: 0;
+}
+.ct-select-group:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 0;
+  color: #ffffff;
+  background-color: #333;
+  text-align: center;
+  /* position:absolute; */
+  bottom:0;
+  width:100%;
+  height:60px; 
+
+}
+@media screen and (max-width: 600px) {
+ul.topnav li.right, 
+ul.topnav li {float: none;},
+}
