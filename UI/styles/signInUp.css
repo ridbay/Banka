@@ -15,7 +15,7 @@ body {
 	height: 100vh;
 	margin: -20px 0 50px;
 }
-
+  
 h1 {
 	font-weight: bold;
 	margin: 0;
@@ -66,8 +66,9 @@ button:focus {
 }
 
 button.ghost {
-	background-color: transparent;
+	background-color: white;
 	border-color: #FFFFFF;
+	color: #222;
 }
 
 form {
@@ -222,6 +223,11 @@ footer {
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 999;
+	z-index: 999;
+	padding: 20px;
+    margin-top: 0;
+    color: #ffffff;
+    background-color: #35424a;
+    text-align: center;
 }
 
